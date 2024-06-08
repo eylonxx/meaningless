@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1717854009078,
+      "tag": "0000_overconfident_medusa",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1717854052890,
+      "tag": "0001_wooden_violations",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1717854262971,
+      "tag": "0002_add-email",
+      "breakpoints": true
+    }
+  ]
+}
