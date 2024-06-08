@@ -12,7 +12,16 @@ const page = async () => {
   if (!user) {
     return <div>please login</div>;
   }
-  return <div>{user.name}</div>;
+  return (
+    <div className='flex flex-col'>
+      <span>{user.name}</span>
+      <span>
+        {allUsers.map((user) => {
+          return <span key={user.id}>{user.id}</span>;
+        })}
+      </span>
+    </div>
+  );
 };
 
 export default page;
