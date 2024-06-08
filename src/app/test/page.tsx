@@ -3,9 +3,12 @@ import React from "react";
 
 const page = async () => {
   const session = await getServerSession();
-  console.log(session);
+  const user = session?.user;
 
-  return <div>page</div>;
+  if (!user) {
+    return <div>please login</div>;
+  }
+  return <div>{user.name}</div>;
 };
 
 export default page;
